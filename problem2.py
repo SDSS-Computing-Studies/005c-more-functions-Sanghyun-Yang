@@ -13,3 +13,14 @@ assert hypotenuse(12,5,False) == 13
 assert hypotenuse(5,3,True) == 4
 (2 points)
 """
+def hypotenuse(a, b, values):
+    if values == True:
+        if a > b:
+            hyp = (a ** 2 - b ** 2) ** 0.5
+        elif b > a:
+            hyp = (b ** 2 - a ** 2) ** 0.5
+    elif values == False:
+        hyp = (a ** 2 + b ** 2) **0.5
+    return hyp
+
+assert hypotenuse(5,3,True) == 4
