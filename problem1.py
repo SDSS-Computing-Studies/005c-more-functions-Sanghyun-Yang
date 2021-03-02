@@ -6,7 +6,7 @@ vice versa, depending on which initial unit is given
 float: the number of degrees
 string: the unit that you currently have: may be 'C' of 'F'
 
-return: float the number of degrees of the other unit
+return: float the nsssumber of degrees of the other unit
 
 Sample assertions:
 assert convertTemp(10,'C') == 50
