@@ -12,11 +12,13 @@ Sample assertions:
 assert convertTemp(10,'C') == 50
 assert converTemp(32,'F') == 0
 """
-def convertTemp(deg, unit):
+
+def convertTemp(x, unit):
     if unit == 'c':
-        degs = (deg * 9/5) + 32
+        a = (x * (9/5)) + 32
     elif unit == 'f':
-        degs = (deg - 32) * 5/9
-    return degs
+        a = (x - 32) * (5/9)
+    return a
 
 
+print(convertTemp(10,'C')) 
