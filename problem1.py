@@ -14,11 +14,10 @@ assert converTemp(32,'F') == 0
 """
 
 def convertTemp(x, unit):
-    if unit == 'c':
+    if unit == 'C':
         a = (x * (9/5)) + 32
-    elif unit == 'f':
+    elif unit == 'F':
         a = (x - 32) * (5/9)
     return a
 
 
-print(convertTemp(10,'C')) 
